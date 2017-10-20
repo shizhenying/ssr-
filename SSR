@@ -141,23 +141,23 @@ function pre_install(){
 # Download files
 function download_files(){
     # Download libsodium file
-    if ! wget --no-check-certificate -O libsodium-1.0.10.tar.gz http://git.oschina.net/lusao/SSR/raw/master/libsodium-1.0.10.tar.gz; then
+    if ! wget --no-check-certificate -O libsodium-1.0.10.tar.gz https://gitee.com/q1339529465/ssr/raw/master/libsodium-1.0.10.tar.gz; then
         echo "下载libsodium失败!"
         exit 1
     fi
     # Download ShadowsocksR file
-    # if ! wget --no-check-certificate -O manyuser.zip http://git.oschina.net/lusao/SSR/raw/master/manyuser.zip; then
+    # if ! wget --no-check-certificate -O manyuser.zip https://gitee.com/q1339529465/ssr/raw/master/manyuser.zip; then
         # echo "Failed to download ShadowsocksR file!"
         # exit 1
     # fi
     # Download ShadowsocksR chkconfig file
     if [ "$OS" == 'CentOS' ]; then
-        if ! wget --no-check-certificate http://git.oschina.net/lusao/SSR/raw/master/shadowsocksR -O /etc/init.d/shadowsocks; then
+        if ! wget --no-check-certificate https://gitee.com/q1339529465/ssr/raw/master/shadowsocksR -O /etc/init.d/shadowsocks; then
             echo "下载ShadowsocksR chkconfig失败!"
             exit 1
         fi
     else
-        if ! wget --no-check-certificate http://git.oschina.net/lusao/SSR/raw/master/shadowsocksR-debian -O /etc/init.d/shadowsocks; then
+        if ! wget --no-check-certificate https://gitee.com/q1339529465/ssr/raw/master/shadowsocksR-debian -O /etc/init.d/shadowsocks; then
             echo "下载ShadowsocksR chkconfig失败!"
             exit 1
         fi
@@ -240,7 +240,7 @@ function install_ss(){
     ldconfig
     # Install ShadowsocksR
     cd $cur_dir
-    wget http://git.oschina.net/lusao/SSR/raw/master/shadowsocks-manyuser.zip
+    wget https://gitee.com/q1339529465/ssr/raw/master/shadowsocks-manyuser.zip
      unzip -q shadowsocks-manyuser.zip
      mv shadowsocks-manyuser /usr/local/shadowsocks/
     #git clone -b manyuser https://github.com/breakwa11/shadowsocks.git /usr/local/shadowsocks
