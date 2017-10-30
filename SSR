@@ -3,15 +3,6 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 rm -f SSR
 clear
-echo -e "\033[34m================================================================\033[0m
-
-\033[31m                            自用一键脚本                         \033[0m
-
-\033[34m================================================================\033[0m";
-echo
-
-echo
-
 #Current folder
 cur_dir=`pwd`
 # Get public IP address
