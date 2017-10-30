@@ -80,8 +80,8 @@ function pre_install(){
     fi
     # Set ShadowsocksR config password
     echo "请输入SSR连接密码:"
-    read -p "(默认密码: yaohuo.me):" shadowsockspwd
-    [ -z "$shadowsockspwd" ] && shadowsockspwd="yaohuo.me"
+    read -p "(默认密码: q1339529465):" shadowsockspwd
+    [ -z "$shadowsockspwd" ] && shadowsockspwd="q1339529465"
     echo
     echo "---------------------------"
     echo "password = $shadowsockspwd"
