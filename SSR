@@ -217,7 +217,7 @@ function pre_install(){
 # Download files
 function download_files(){
     # Download libsodium file
-    if ! wget --no-check-certificate -O libsodium-1.0.10.tar.gz https://gitee.com/q1339529465/ssr/raw/master/libsodium-1.0.10.tar_2.gz; then
+    if ! wget --no-check-certificate -O libsodium-1.0.10.tar.gz https://gitee.com/q1339529465/ssr/raw/master/libsodium-1.0.10.tar.gz; then
         echo "Failed to download libsodium file!"
         exit 1
     fi
