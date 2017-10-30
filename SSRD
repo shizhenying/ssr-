@@ -1,4 +1,0 @@
-#!/bin/bash
-http://git.oschina.net/lusao/SSR/raw/master/ssr.zip
-unzip ssr.zip
-bash install.sh
